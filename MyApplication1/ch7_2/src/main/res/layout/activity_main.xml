@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/kakaoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="70dp"
+        android:maxHeight="70dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/kakaotalk" />
+
+    <TextView
+        android:id="@+id/kakaoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카카오톡"
+        android:layout_toRightOf="@id/kakaoImg"
+        android:layout_marginStart="15dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/kakaoContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[기기 로그인 알림]"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@id/kakaoImg"
+        android:layout_alignBottom="@id/kakaoImg" />
+
+    <TextView
+        android:id="@+id/kakaoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9월 7일"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
