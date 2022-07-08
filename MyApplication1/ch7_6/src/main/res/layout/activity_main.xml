@@ -5,174 +5,181 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:padding="20dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
             android:src="@drawable/add"
-            android:maxWidth="25dp"
-            android:maxHeight="25dp"
-            android:adjustViewBounds="true" />
+            app:tint="#00FF00" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="연락처에 추가"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/teal_700" />
+            android:textColor="#00FF00"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="02-120"
-        android:textSize="50sp"
-        android:textColor="@color/gray"
         android:layout_marginTop="100dp"
-        android:gravity="center_horizontal" />
+        android:text="02-120"
+        android:textSize="40dp" />
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         android:columnCount="3"
-        android:layout_gravity="center_horizontal">
+        android:layout_marginTop="10dp">
 
-        <Button android:text="1"
-            android:textColor="@color/gray"
+        <TextView
+            android:text="1"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="2"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="2"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="3"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="3"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="4"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="4"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="5"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="5"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="6"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="6"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="7"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="7"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="8"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="8"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="9"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="9"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="*"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="*"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="0"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="0"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
-        <Button android:text="#"
-            android:textColor="@color/gray"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="#"
+            android:textSize="30dp"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:paddingStart="50dp"
-            android:paddingEnd="50dp"
-            android:background="@android:color/transparent"/>
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
 
     </GridLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <RelativeLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal">
+        android:layout_marginTop="20dp">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/video" />
+            android:id="@+id/icon_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/video"
+            android:layout_marginRight="30dp" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/call" />
+            android:id="@+id/icon_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/call"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/icon_video"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/back" />
+            android:id="@+id/icon_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/icon_call"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
 </LinearLayout>
