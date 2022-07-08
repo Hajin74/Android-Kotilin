@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add"
+            android:maxWidth="25dp"
+            android:maxHeight="25dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연락처에 추가"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="02-120"
+        android:textSize="50sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:columnCount="3"
+        android:layout_gravity="center_horizontal">
+
+        <Button android:text="1"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="2"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="3"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="4"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="5"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="6"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="7"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="8"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="9"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="*"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="0"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+        <Button android:text="#"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="@android:color/transparent"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/video" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/call" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/back" />
+
+    </LinearLayout>
+
+</LinearLayout>
