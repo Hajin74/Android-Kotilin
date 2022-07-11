@@ -40,4 +40,14 @@
         android:text="text"
         android:textSize="50dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="button"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/button_txt" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
