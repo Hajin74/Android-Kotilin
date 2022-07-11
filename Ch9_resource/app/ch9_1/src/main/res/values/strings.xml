@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ch9_1</string>
+    <string name="txt_data1">Hello</string>
+    <string name="txt_data2">World</string>
 </resources>
