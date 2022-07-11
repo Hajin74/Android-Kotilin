@@ -16,3 +16,4 @@ rootProject.name = "Ch8_event"
 include ':app'
 include ':ch8_1'
 include ':app:ch8_2'
+include ':app:ch8_3'
