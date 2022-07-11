@@ -24,7 +24,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/txt_data1"
-        android:textSize="50dp" />
+        android:textSize="@dimen/txt_size"
+        android:textColor="@color/txt_color"
+        android:background="@color/txt_bg_color" />
 
     <TextView
         android:id="@+id/tv2"
