@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         when (event?.action) {
             MotionEvent.ACTION_DOWN -> {
-                Log.d("event", "Touch down")
+                Log.d("event", "Touch down x: ${event.x}, rawX: ${event.rawX}")
             }
             MotionEvent.ACTION_UP -> {
                 Log.d("event", "Touch up")
