@@ -6,11 +6,11 @@ import android.util.Log
 import android.widget.CompoundButton
 import com.example.ch8_2.databinding.ActivityMainBinding
 
-class MyEventHandler: CompoundButton.OnCheckedChangeListener {
-    override fun onCheckedChanged(p0: CompoundButton?, p1: Boolean) {
-        Log.d("이벤트: ", "체크박스 클릭!!!")
-    }
-}
+//class MyEventHandler: CompoundButton.OnCheckedChangeListener {
+//    override fun onCheckedChanged(p0: CompoundButton?, p1: Boolean) {
+//        Log.d("이벤트: ", "체크박스 클릭!!!")
+//    }
+//}
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 //            }
 //        })
 
-        binding.checkBox.setOnCheckedChangeListener(MyEventHandler())
+        binding.checkBox.setOnCheckedChangeListener {
+            compoundButton, b ->
+            Log.d("이벤트: ", "체크박스 클릭했어요")
+        }
     }
 }
