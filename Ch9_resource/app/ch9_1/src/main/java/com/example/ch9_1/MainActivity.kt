@@ -16,5 +16,6 @@ class MainActivity : AppCompatActivity() {
         binding.tv2.setTextColor(ResourcesCompat.getColor(resources, R.color.txt_color, null))
         binding.tv2.setBackgroundColor(ResourcesCompat.getColor(resources, R.color.txt_bg_color, null))
         binding.tv2.textSize = resources.getDimension(R.dimen.txt_size)
+
     }
 }
