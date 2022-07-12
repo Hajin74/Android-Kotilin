@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import com.example.ch10_3.databinding.ActivityMainBinding
+import com.example.ch10_3.databinding.DialogInputBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,19 +31,14 @@ class MainActivity : AppCompatActivity() {
 
     fun onClick(view: View) {
         if(view.id == R.id.button) {
-            val items = arrayOf<String>("사과", "불닭볶음면", "쌀국수", "육회비빔밥", "라멘")
+            val dialogBinding = DialogInputBinding.inflate(layoutInflater)
             AlertDialog.Builder(this).run {
-                setTitle("item list")
-                setIcon(android.R.drawable.ic_dialog_info)
-                setSingleChoiceItems(items, 1, object: DialogInterface.OnClickListener {
-                    override fun onClick(p0: DialogInterface?, p1: Int) {
-                        Log.d("다이얼로그 싱글 초이스", "${items[p1]}이 선택되었습니다.")
-                    }
-                })
+                setTitle("Input")
+                setView(dialogBinding.root)
                 setPositiveButton("닫기", null)
-                setCancelable(false)
                 show()
-            }.setCanceledOnTouchOutside(false)
+            }
+
         }
     }
 }
