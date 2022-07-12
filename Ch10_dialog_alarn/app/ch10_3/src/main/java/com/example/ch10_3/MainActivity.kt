@@ -34,14 +34,15 @@ class MainActivity : AppCompatActivity() {
             AlertDialog.Builder(this).run {
                 setTitle("item list")
                 setIcon(android.R.drawable.ic_dialog_info)
-                setMultiChoiceItems(items, booleanArrayOf(true, false, true, false, true), object: DialogInterface.OnMultiChoiceClickListener {
-                    override fun onClick(p0: DialogInterface?, p1: Int, p2: Boolean) {
-                        Log.d("멀티초이스아이템", "${items[p1]}이 ${if(p2) "선택되었습니다" else "선택 해제되었습니다."}")
+                setSingleChoiceItems(items, 1, object: DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+                        Log.d("다이얼로그 싱글 초이스", "${items[p1]}이 선택되었습니다.")
                     }
                 })
                 setPositiveButton("닫기", null)
+                setCancelable(false)
                 show()
-            }
+            }.setCanceledOnTouchOutside(false)
         }
     }
 }
