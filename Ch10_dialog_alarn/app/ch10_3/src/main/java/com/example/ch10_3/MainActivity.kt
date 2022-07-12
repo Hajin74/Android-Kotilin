@@ -1,5 +1,6 @@
 package com.example.ch10_3
 
+import android.app.ProgressDialog.show
 import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -29,12 +30,17 @@ class MainActivity : AppCompatActivity() {
 
     fun onClick(view: View) {
         if(view.id == R.id.button) {
+            val items = arrayOf<String>("사과", "불닭볶음면", "쌀국수", "육회비빔밥", "라멘")
             AlertDialog.Builder(this).run {
-                setTitle("test dialog")
+                setTitle("item list")
                 setIcon(android.R.drawable.ic_dialog_info)
-                setMessage("정말 종료하시겠습니까?")
-                setPositiveButton("Ok", eventHandler)
-                setNegativeButton("Cancel", eventHandler)
+                setItems(items, object: DialogInterface.OnClickListener {
+                    override fun onClick(p0: DialogInterface?, p1: Int) {
+                        Log.d("아이템들", "선택한 과일 : ${items[p1]}")
+                    }
+
+                })
+                setPositiveButton("닫기", null)
                 show()
             }
         }
