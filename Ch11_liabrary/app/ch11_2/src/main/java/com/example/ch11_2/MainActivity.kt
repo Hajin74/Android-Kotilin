@@ -2,6 +2,7 @@ package com.example.ch11_2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 
@@ -16,5 +17,17 @@ class MainActivity : AppCompatActivity() {
         val menuItem2: MenuItem? = menu?.add(0, 1, 0, "menu2")
 
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId){
+        0 -> {
+            Log.d("Selected Menu ", "menu1 click")
+            true
+        }
+        1 -> {
+            Log.d("Selected Menu ", "menu2 click")
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
     }
 }
