@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.widget.SearchView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,19 +14,21 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return super.onCreateOptionsMenu(menu)
+       val inflater = menuInflater
+        inflater.inflate(R.menu.menu_main, menu)
+
+        val menuItem = menu?.findItem(R.id.menu_search)
+        val searchView = menuItem?.actionView as SearchView
+        searchView.setOnQueryTextListener(object: SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                return true
+            }
+        })
+        return true
     }
 
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId){
-//        0 -> {
-//            Log.d("Selected Menu ", "menu1 click")
-//            true
-//        }
-//        1 -> {
-//            Log.d("Selected Menu ", "menu2 click")
-//            true
-//        }
-//        else -> super.onOptionsItemSelected(item)
-//    }
 }
