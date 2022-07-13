@@ -13,21 +13,19 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val menuItem1: MenuItem? = menu?.add(0, 0, 0, "menu1")
-        val menuItem2: MenuItem? = menu?.add(0, 1, 0, "menu2")
-
+        menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId){
-        0 -> {
-            Log.d("Selected Menu ", "menu1 click")
-            true
-        }
-        1 -> {
-            Log.d("Selected Menu ", "menu2 click")
-            true
-        }
-        else -> super.onOptionsItemSelected(item)
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId){
+//        0 -> {
+//            Log.d("Selected Menu ", "menu1 click")
+//            true
+//        }
+//        1 -> {
+//            Log.d("Selected Menu ", "menu2 click")
+//            true
+//        }
+//        else -> super.onOptionsItemSelected(item)
+//    }
 }
