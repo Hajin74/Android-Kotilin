@@ -1,5 +1,6 @@
 package com.example.intenttest
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.intenttest.databinding.ActivityMainBinding
@@ -13,6 +14,12 @@ class SubActivity : AppCompatActivity() {
 
         if(intent.hasExtra("msg")) {
             binding.tvGetMsg.text = intent.getStringExtra("msg")
+        }
+
+        binding.btnB.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
+            intent.putExtra("message", binding.tvGetMsg.text.toString())
+            startActivity(intent)
         }
     }
 }
